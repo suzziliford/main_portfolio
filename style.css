@@ -1,0 +1,77 @@
+body {
+    font-family: futura;
+}
+
+#top_container {
+    margin: 5vh auto auto 37vh;
+}
+
+#heading {
+    border-radius: 5%;
+}
+
+#matty_name {
+    font-size: 6.5vh;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    text-align: right;
+    border-right: 1px solid;
+}
+
+#full_stack {
+    font-size: 6.5vh;
+    line-height: 1.2;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100%; 
+    text-align: left;
+}
+
+
+/* 
+#full_stack {
+    font-size: xx-large;
+    text-align: justify;
+} */
+
+.container {
+    color: aliceblue;
+}
+
+#matty_portrait {
+    border-radius: 50%;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+#portfolio {
+    margin-top: 10vh;
+    text-align: center;
+    font-size: 3vh;
+}
+
+.photo_l {
+    width: 60%;
+    display: flex;
+    margin: 1vh 1vh 1vh auto; 
+    /* align-items: flex-end; Align content to the bottom of the container */
+    /* justify-content: flex-end; Align content to the right of the container */
+
+}
+
+.photo_r {
+    width: 60%;
+    display: flex;
+    margin: 1vh auto 1vh 1vh; /* Set top and bottom margin to 1vh and auto for left and right margin */
+    align-items: center;
+    justify-content: center; /* Center the content horizontally and vertically within the flex container */
+}
+
+#projects {
+    margin-bottom: 10vh;
+}
