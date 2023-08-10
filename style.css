@@ -1,73 +1,116 @@
 body {
     font-family: futura;
+    /* background-size: 240%;  */
 }
 
 #top_container {
-    margin: 5vh auto auto 37vh;
+    margin: 5vh auto 0 auto;
+    width: 85%;
+    background-color: hsl(160, 100%, 75%, 0.1);
+    border-radius: 45vh;
+    border: 0.5px solid;
+    border-color: rgb(205, 217, 228, 0.4);
+    background-blend-mode:lighten;
+    display: flex;
 }
+
+#mattybox,
+#stackbox, 
+#portraitbox {
+    flex: 1;
+    padding: 0 1vh 0 0 ;
+    text-align: center;
+}
+
+/* #stackbox {
+    padding: 0 0vh 0 3vh;
+}
+
+#portraitbox {
+    padding: 0 0vh 0 0vh;
+} */
 
 #heading {
+    display: flex;
     border-radius: 5%;
+    width: 100%;
 }
 
+
 #matty_name {
-    font-size: 6.5vh;
+    /* width: 9vh; */
+    font-size: 3.5vh;
+    margin: 0 0vh 0 0vh; 
     line-height: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%; 
-    text-align: right;
-    border-right: 1px solid;
+    text-align: center;
+    /* border-right: 1px solid; */
 }
 
 #full_stack {
-    font-size: 6.5vh;
+    /* padding-left: 2.5vh; */
+    font-size: 3.4vh;
     line-height: 1.2;
     display: flex;
     /* justify-content: center; */
     align-items: center;
     height: 100%; 
     text-align: left;
+    /* border-left: 1px solid; */
+
 }
 
-
-/* 
-#full_stack {
-    font-size: xx-large;
-    text-align: justify;
-} */
 
 .container {
     color: aliceblue;
 }
 
 #matty_portrait {
+    margin: 1vh 0 1vh 0;
     border-radius: 50%;
-    width: 50%;
-    height: auto;
+    border: 1px solid;
+    border-color: rgb(245, 248, 242, 0.8);
+    width: auto;
+    height: 10vh;
     object-fit: cover;
 }
 
 #portfolio {
-    margin-top: 10vh;
-    text-align: center;
-    font-size: 3vh;
+        margin-top: 10vh;
+        text-align: center;
+        font-size: 3vh;
+        background-color: hsl(160, 100%, 75%, 0.1);
+        border-radius: 60vh;
+        padding: 0 10px 8px 15px;
+        display:inline-flex;    
+        border: 0.5px solid;
+        border-color: rgb(205, 217, 228, 0.4);
+
+}
+
+#portfolio_container {
+    width: 22%;
+    margin: 0 auto 0 auto;
+    /* border-radius: 90%; */
+    
 }
 
 .photo_l {
-    width: 60%;
+    width: 80%;
     display: flex;
-    margin: 1vh 1vh 1vh auto; 
+    margin: 6vh 1vh 1vh auto; 
     /* align-items: flex-end; Align content to the bottom of the container */
     /* justify-content: flex-end; Align content to the right of the container */
 
 }
 
 .photo_r {
-    width: 60%;
+    width: 80%;
     display: flex;
-    margin: 1vh auto 1vh 1vh; /* Set top and bottom margin to 1vh and auto for left and right margin */
+    margin: 6vh auto 1vh 1vh; /* Set top and bottom margin to 1vh and auto for left and right margin */
     align-items: center;
     justify-content: center; /* Center the content horizontally and vertically within the flex container */
 }
@@ -75,3 +118,238 @@ body {
 #projects {
     margin-bottom: 10vh;
 }
+
+
+@media only screen and (min-width: 375px) {
+
+    #top_container {
+        width: 80%;
+    }
+
+    #portfolio_container {
+        width: 19%;
+        margin: 0 auto 0 auto;
+    }
+
+    #portfolio {
+        padding: 0 5px 4px 8px;
+
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    #portfolio_container {
+        width: 17%;
+        margin: 0 auto 0 auto;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+    #portfolio_container {
+        width: 17%;
+        margin: 0 auto 0 auto;
+    }
+
+    #top_container {
+        width: 80%;
+    }
+    
+    #heading {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    body {
+        background-size: 200%; 
+    }
+    
+    #top_container {
+        margin: 10vh auto 0vh auto;
+        width: 80%;
+    }
+
+    
+    #matty_name {
+        /* width: 9vh; */
+        font-size: 7vh;
+    }
+    
+    #full_stack {
+        padding-left: 11vh;
+        font-size: 7vh;
+    
+    }
+    
+    #matty_portrait {
+        width: auto;
+        height: 35vh;
+    }
+
+    #portfolio {
+        font-size: 6vh;
+    }
+
+    #portfolio_container {
+        width: 16%;
+        margin: 0 auto 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        /* background-size: 150%;  */
+    }
+    
+    #top_container {
+        width: 80%;
+        margin: 15vh auto 0 auto;
+    
+    }
+
+    
+    #matty_name {
+        /* width: 9vh; */
+        font-size: 10vh;
+    }
+    
+    #full_stack {
+        padding-left: 14vh;
+        font-size: 10vh;
+    
+    }
+    
+    #matty_portrait {
+        width: auto;
+        height: 40vh;
+    }
+
+    #portfolio {
+        font-size: 6vh;
+    }
+
+    #portfolio_container {
+        width: 11%;
+        margin: 0 auto 0 auto;
+    }
+    
+}
+
+@media only screen and (min-width: 1440px) {
+
+    /* #heading {
+        width: 100%;
+    } */
+
+    #matty_name {
+        font-size: 7vh;
+    }
+
+    #top_container {
+        margin: 15vh auto 0 auto;
+        width: 80%;
+    }
+
+    #full_stack {
+        padding-left: 8vh;
+        font-size: 7vh;
+    
+    }
+
+    #matty_portrait {
+        height: 40vh;
+    }
+
+    #portfolio_container {
+        width: 13%;
+        margin: 0 auto 0 auto;
+    }
+
+}
+
+@media only screen and (min-width: 1900px) {
+
+    #heading {
+        width: 100%;
+    }
+
+    #full_stack {
+        font-size: 6vh;
+        margin: 0 0vh 0 0vh;
+    }
+
+    #matty_portrait {
+        height: 40vh;
+        margin-left: 8vh;
+    }
+
+    #matty_name {
+        font-size: 6vh;
+        margin: 0 0 0 0vh;
+        border-right: 0px;
+    }
+
+    #top_container {
+        margin: 5vh 0 0 30vh;
+    
+    }
+
+    #matty_portrait {
+        height: 30vh;
+    }
+
+    #stackbox {
+        padding: 0 0vh 0 0vh;
+        margin: 0 0 0 0;
+    }
+}
+
+
+@media only screen and (min-width: 2560px) {
+
+    body {
+        background-size: 150%; 
+    }
+    
+    #top_container {
+        width: 80%;
+        margin: 15vh auto 0 auto;
+    
+    }
+
+    #heading {
+        width: 100%;
+    }
+    
+    #matty_name {
+        /* width: 9vh; */
+        font-size: 10vh;
+    }
+    
+    #full_stack {
+        padding-left: 14vh;
+        font-size: 8vh;
+    
+    }
+    
+    #matty_portrait {
+        width: auto;
+        height: 40vh;
+    }
+
+    #portfolio {
+        font-size: 6vh;
+    }
+
+
+}
+
+@media only screen and (min-width: 2880) {
+    body {
+        background-size: 60%;
+    }
+}
+
