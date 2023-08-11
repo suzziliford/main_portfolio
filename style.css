@@ -22,14 +22,6 @@ body {
     text-align: center;
 }
 
-/* #stackbox {
-    padding: 0 0vh 0 3vh;
-}
-
-#portraitbox {
-    padding: 0 0vh 0 0vh;
-} */
-
 #heading {
     display: flex;
     border-radius: 5%;
@@ -80,6 +72,7 @@ body {
 
 #portfolio {
         margin-top: 10vh;
+        margin-bottom: 5vh;
         text-align: center;
         font-size: 3vh;
         background-color: hsl(160, 100%, 75%, 0.1);
@@ -101,26 +94,89 @@ body {
 .photo_l {
     width: 80%;
     display: flex;
-    margin: 6vh 1vh 1vh auto; 
-    /* align-items: flex-end; Align content to the bottom of the container */
-    /* justify-content: flex-end; Align content to the right of the container */
+    margin: 0vh 1vh 1vh auto; 
+
 
 }
 
 .photo_r {
     width: 80%;
     display: flex;
-    margin: 6vh auto 1vh 1vh; /* Set top and bottom margin to 1vh and auto for left and right margin */
+    margin: 0vh auto 1vh 1vh; 
     align-items: center;
-    justify-content: center; /* Center the content horizontally and vertically within the flex container */
+    justify-content: center; 
+
 }
 
 #projects {
     margin-bottom: 10vh;
 }
 
+.text_box_l, .text_box_r {
+    background-color: hsl(160, 100%, 75%, 0.1);
+    color: white;
+    padding: 10px;
+    /* text-align: center; */
+    font-size: 4vh;
+    border-radius: 2vh;
+}
+
+.text_box_l {
+    margin: 6vh 1vh 1vh auto; 
+}
+
+.text_box_r {
+    padding-left: 20px;
+    color: aliceblue;
+    margin: 6vh auto 1vh 1vh; 
+
+    
+}
+
+.photo_container_l {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo_container_l img,
+.photo_l, .text_box_l {
+    width: 80%;
+    height: auto;
+}
+
+.photo_container_r img,
+.photo_r, .text_box_r {
+    width: 80%;
+    height: auto;
+}
+
+
+/* .photo_container_l .text-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+} */
+
+/* .photo_container_l:hover .text-box {
+    transform: translateY(0);
+} */
+
+
+@media only screen and (min-width: 320px) {
+    body {
+        font-family: futura;
+        background-size: 320%; 
+    }
+    
+}
 
 @media only screen and (min-width: 375px) {
+
+    body {
+        background-size: 250%; 
+    }
 
     #top_container {
         width: 80%;
