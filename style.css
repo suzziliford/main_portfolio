@@ -91,6 +91,27 @@ body {
     
 }
 
+#contact {
+    color: white;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    font-size: 3vh;
+    background-color: hsla(183, 97%, 29%, 0.7);
+    border-radius: 60vh;
+    padding: 0 10px 8px 15px;
+    display:inline-flex;    
+    border: 0.5px solid;
+    border-color: rgb(205, 217, 228, 0.4);
+
+}
+
+#contact_container {
+    width: 22%;
+    margin: 0 3vh 0 3vh;
+    padding-bottom: 10vh;
+}
+
 .photo_l {
     width: 80%;
     display: flex;
@@ -191,10 +212,24 @@ body {
         padding: 0 5px 4px 8px;
 
     }
+
+    #contact_container {
+        width: 19%;
+        margin: 0 auto 0 auto;
+    }
+
+    #contact {
+        padding: 0 5px 4px 8px;
+    }
 }
 
 @media only screen and (min-width: 400px) {
     #portfolio_container {
+        width: 17%;
+        margin: 0 auto 0 auto;
+    }
+
+    #contact_container {
         width: 17%;
         margin: 0 auto 0 auto;
     }
@@ -213,6 +248,12 @@ body {
     #heading {
         width: 100%;
     }
+
+    #contact_container {
+        width: 17%;
+        margin: 0 auto 0 auto;
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -253,6 +294,16 @@ body {
         margin: 0 auto 0 auto;
     }
 
+    #contact {
+        font-size: 6vh;
+        padding: 0 3vh 0 3vh;
+
+    }
+
+    #contact_container {
+        width: 16%;
+        margin: 0 auto 0 auto;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -291,6 +342,17 @@ body {
         width: 11%;
         margin: 0 auto 0 auto;
     }
+
+    #contact {
+        font-size: 6vh;
+        padding: 0 3vh 0 3vh;
+
+    }
+
+    #contact_container {
+        width: 11%;
+        margin: 0 auto 0 auto;
+    }
     
 }
 
@@ -324,6 +386,14 @@ body {
         margin: 0 auto 0 auto;
     }
 
+    #contact_container {
+        width: 13%;
+        margin: 0 auto 0 auto;
+    }
+
+    #contact {
+        padding: 0 3vh 0 3vh;
+    }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -400,7 +470,9 @@ body {
         font-size: 6vh;
     }
 
-
+    #contact {
+        font-size: 6vh;
+    }
 }
 
 @media only screen and (min-width: 2880) {
