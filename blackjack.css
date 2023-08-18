@@ -1,0 +1,11 @@
+#viddiv {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.Description {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

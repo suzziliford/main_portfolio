@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blackjack</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="blackjack.css">
+    <nav class="navbar navbar-expand-lg bg-success">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </head>
 <body>
+    <style>
+    body {
+        background-color: rgb(12, 42, 32);
+      background-image: url('images/5D.png');
+      background-position: center;
+      background-size: 300%; 
+    }
+    </style>
     {% include 'nav.html' %}
-    <h1>BUTTS</h1>
+    <h1 class="Description" style="color: white";>Run through of the object oriented program</h1>
+    <div class="container" id="viddiv">
+        <video src="images/blackjack.mov" controls width="1000"></video>
+    </div>
 </body>
 </html>

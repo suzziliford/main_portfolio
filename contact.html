@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="contact_style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="contact.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("lv4o4uTwPlOuCMyZV");
+   })();
+</script>
+    <title>Contact</title>
     <nav class="navbar navbar-expand-lg bg-success">
         <div class="container-fluid">
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -26,5 +33,56 @@
           </div>
         </div>
       </nav>
-</body>
+</head>
+<body>
+  <style>
+    body {
+        background-color: rgb(12, 42, 32);
+      background-image: url('images/5D.png');
+      background-position: center;
+      background-size: 300%; 
+    }
+    </style>
+
+    <div class="container p-5">
+
+      <div class="container border mt-3 bg-light">
+        
+        <div class="row">
+          <div class="col-md-6 p-5 bg-primary text-white">
+            <h1>Hi there!</h1>
+            <h4>Thanks for reaching out. <br> I look forward to receiving your email, <br> and will be back in touch in a jiffy!</h4>
+          </div>
+          <div class="col-md-6 border-left py-3">
+            <h1>Contact form</h1>
+            <div class="form group">
+              <h5 for="name">Name</h5>
+              <input 
+              type="text" 
+              class="form-control" 
+              id="name" 
+              placeholder="enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <h5 for="email">Email</h5>
+              <input 
+              type="email" 
+              class="form-control" 
+              id="email" 
+              placeholder="enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <h5 for="message">Message</h5>
+              <textarea id="message" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="container p-2">
+              <button class="btn btn-primary"onclick="sendMail()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
 </html>
